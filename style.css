@@ -5,6 +5,27 @@
     }
 }
 
+.loader {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.loader .inner {
+    width: 100%;
+    height: 100%;
+    background: url(..//images/preloader.gif) center center no-repeat;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: coral !important;
+}
+
 img {
     width: 100%;
     height: 300px;
@@ -17,11 +38,22 @@ images {
     max-height: 300px;
 }
 
-.footer {
+.footer, .footerLink {
     line-height: .5rem;
     font-style: italic;
     color: coral;
     font-weight: 500;
+}
+
+.footerLink {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footerLink:hover {
+    color: #000;
+    text-decoration: none;
 }
 
 .navbar-light a.navbar-brand,
